@@ -1,0 +1,26 @@
+<mujoco>
+
+  <asset>
+  	<mesh name="P1" file="P1_case1_ds.stl" scale="30 30 30"/>   
+  </asset>
+  <option gravity="0 0 0"/>
+  <contact>
+  	<exclude body1="drone_piloted_body" body2="P1_body"/>
+  </contact>
+  <worldbody>
+  <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1" castshadow="false"/>
+  <light diffuse=".5 .5 .5" pos="0 0 -3" dir="0 0 1" castshadow="false"/>
+  <light diffuse=".5 .5 .5" pos="0 3 0" dir="0 -1 0" castshadow="false"/>
+	<geom type="plane" size="2 2 0.1" rgba=".9 0 0 1"/>
+	<body name="P1_body">
+		<geom name="P1_geom" type="mesh" mesh="P1" pos="0.25 -0.5 0.5" euler="0 0 180" rgba="1 1 1 1"/>
+		
+	</body>
+	<body name="drone_piloted_body" pos="-0.025 -0.9 1.11">
+		<joint type="free" name="drone_free_joint"/>
+		<geom name="drone_body" type="box" size=".03 .03 .03" rgba=".9 .9 0 1"/>
+		<camera name="drone_camera" pos="0 .04 0" euler="90 0 0"/>
+	</body>
+		
+  </worldbody>
+</mujoco>
