@@ -31,7 +31,7 @@ This project aims to demonstrate visual understanding and simulation capabilitie
 ## 📂 Folder Structure
 
 ***
-Vascular-Model-Exploration/
+
 ├── mujoco-3.3.2/ # MuJoCo simulation environment
 
 │ ├── model/
