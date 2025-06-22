@@ -27,3 +27,16 @@ This project aims to demonstrate visual understanding and simulation capabilitie
 - ✅ Demonstrated on multiple anatomical models.
 
 ---
+
+## 📂 Folder Structure
+
+***
+Vascular-Model-Exploration/
+├── mujoco-3.3.2/ # MuJoCo simulation environment
+│ ├── model/
+│ │ └── vasculature/ # STL models and MuJoCo XML files
+│ └── bin/ # MuJoCo executables (simulate, record, etc.)
+├── P1_case1_/ # Sample vascular case with .py and .xml
+├── simulate/ # Custom simulation logic (if modified)
+└── README.md # Project overview (this file)
+***
